@@ -44,7 +44,7 @@ Before you run the test suite, you also need to populate an environment variable
 
 Please do not store your Atmosphere password persistently in plaintext.
 
-You can also set a browser to use. The default browser is Firefox. To use Chrome, set the SANITYBROWSER environment 
+You can also set a browser to use. The default browser is Firefox. To use Chrome, set the SANITYBROWSER environment
 variable:
 
 `export SANITYBROWSER=chrome`
@@ -58,6 +58,9 @@ where 2 is the max number of processes you want run.
 Alternatively, the script can be used as a guidebook for running each step of the test suite individually. Open run.bash in a text editor and manually copy each step into the command line. You'll have to manually change the `$PROCESSES` variable to the number of processes you want to run, usually 2-4.
 
 ### Reference:
+To launch a bunch of instances specified by GUID and name:
+`behave features/launch-by-guid.feature`
+
 To run a single feature:  
 `behave features/launch.feature`
 
