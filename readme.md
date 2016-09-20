@@ -44,8 +44,7 @@ Before you run the test suite, you also need to populate an environment variable
 
 Please do not store your Atmosphere password persistently in plaintext.
 
-You can also set a browser to use. The default browser is Firefox. To use Chrome, set the SANITYBROWSER environment
-variable:
+You can also set a browser to use. The default browser is Firefox. To use Chrome, set the SANITYBROWSER environment variable:
 
 `export SANITYBROWSER=chrome`
 
@@ -95,6 +94,8 @@ where 38 is the line number.
 
 **Q.** Why not use personas?  
 **A.** Behave-parallel doesn't have `context.execute_steps` implemented, which personas make heavy use of. This is also why some steps in steps.py are enormous.
+
+Some of the scenarios use the `@persist_browser` tag, which does not destroy browser state between scenarios (as configured in `environment.py`).
 
 ## To do:
 - test ssh functionality in test.feature using paramiko
