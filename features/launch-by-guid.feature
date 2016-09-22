@@ -1,6 +1,4 @@
-# This feature launches all of the featured images on all of the providers of Atmosphere and ensures they get to the networking step
-
-Feature: Launch all featured images
+Feature: Launch a set of images defined by name and GUID
 
     @persist_browser
     Scenario: Log into atmosphere
